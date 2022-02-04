@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Upload</title>
+  	<link rel="stylesheet" href="/style/normalize.min.css">
+	<link rel="stylesheet" href="/style/upload.css">
+	<style> 
+	#label {
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	
+<div class="frame">
+  <div class="center">
+		<div class="bar"></div>
+		<div class="title">Drop file to upload</div>
+		<div class="dropzone">
+			<div class="content">
+				<img title="upload" src="/static/upload.png" class="upload">
+				<span class="filename"></span>
+				<input title="input" class='input' type="file" id="file_input" />
+			</div>
+		</div>
+		<img title="syncing" src="/static/syncing.png" class="syncing">
+		<img title="checkmark" src="/static/checkmark.png" class="done">
+		<button type="submit" class='upload-btn' id="upload_button">Upload File</button>
+  </div>
+  <div>
+	<label for="" id='label'></label>
+</div>
+</div>
+  	<script src='/scripts/jquery.min.js'></script>
+    <script src="/socket.io/socket.io.js"></script>
+	<script src="/scripts/client.min.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
